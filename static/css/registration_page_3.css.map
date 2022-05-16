@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,GAAG;CAClB",
+    "sources": [
+        "registration_page_3.scss"
+    ],
+    "names": [],
+    "file": "registration_page_3.css"
+}
