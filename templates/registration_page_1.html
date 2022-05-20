@@ -1,23 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    {% load static %}
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {% block title %}
-        Registration Page
-        {% endblock %}
-    </title>
-    <link rel="stylesheet" href="{% static 'css/registration_page_1.css' %}">
-    
-</head>
 {% load static %}
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{% block title %} Register {% endblock %}</title>
+<link rel="stylesheet" href="{% static 'css/registration_page_1.css' %}" />
 
+{% block content %}
+<div class="container">
+  <div class="title">Register</div>
+  <div class="content">
+    <form method="POST">
+      {% csrf_token %}
 
-<body>
-    tesing
-</body>
-</html>
+      <div class="user-details">
+        <div class="input-box">
+          {% for field in form %}
+          <span class="details">{{ field.label }}</span>
+          {{ field }} {% endfor %}
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Register" />
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

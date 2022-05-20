@@ -116,3 +116,49 @@ class Student(AbstractBaseUser):
 
     def has_module_perms(self, app_label):
         return True
+
+Gender = (
+    ('None', 'None'),
+    ('Male', 'Male'),
+    ('Female', 'Female'),
+    ('Other', 'Other'),
+)
+Choices = (
+    ('None', 'None'),
+    ('Placements', 'Placements'),
+    ('Higher Studies', 'Higher Studies'),
+    ('Enterpreneurship', 'Enterpreneurship'),
+    ('Other', 'Other'),
+)
+
+School = (
+    ('None','None'),
+    ('School Of Engineering', 'School Of Engineering'),
+    ('School Of Law', 'School Of Law'),
+    ('School Of Desiging', 'School Of Desiging'),
+    ('School Of Management', 'School Of Management'),
+)
+
+class Stu_Register(models.Model):
+    first_name = models.CharField(verbose_name='First Name', max_length=200, null=True)
+    middle_name = models.CharField(verbose_name='Middle Name', max_length=200, null=True)
+    last_name = models.CharField(verbose_name='Last Name', max_length=200, null=True)
+    phone_number = models.CharField(verbose_name='Phone Number', max_length=10, null=True)
+    roll_number = models.CharField(verbose_name='Roll Number', max_length=20, null=True, unique=True)
+    university_mail_id = models.CharField(verbose_name='University Mail Id', max_length=100, null=True, unique=True)
+    school = models.CharField(verbose_name='School',max_length=100, default="None", choices=School)
+    section = models.CharField(verbose_name='Section',max_length=20)
+    dob = models.DateField(verbose_name='Date Of Birth', max_length=20, null=True)
+    course = models.CharField(verbose_name='Course', max_length=50, null=True)
+    ambition = models.TextField(verbose_name='Ambition', max_length=1500, null=True)
+    semester = models.CharField(verbose_name='Semester', max_length=20, null=True)
+    permanent_address = models.CharField(verbose_name='Permanent Address', max_length=600, null=True)
+    gender = models.CharField(verbose_name='Gender',max_length=20, default="None", choices=Gender)
+    hobbies = models.TextField(verbose_name='hobbies', max_length=500, null=True)
+    # country = models.CharField(verbose_name='country', max_length=100, null=True)
+    current_address = models.CharField(verbose_name='Current Address', max_length=600, null=True)
+    why_ccagc = models.CharField(verbose_name='You are looking Career counselling and Guidance for', max_length=50, default="None", choices=Choices)
+    # pincode = models.CharField(verbose_name='pincode', max_length=10, null=True)
+    career_goals = models.TextField(verbose_name='What are your current career goals? (Even if you are uncertain/, fill in any thoughts you might have)/,', max_length=5000, null=True)
+    hopes = models.TextField(verbose_name='What are you hoping for from Career counselling and Guidance Cell?', max_length=5000, null=True)
+    barries = models.TextField(verbose_name='What kinds of barriers do you think could get in the way of you pursuing the career you want, or meeting your career goals?', max_length=5000, null=True)
