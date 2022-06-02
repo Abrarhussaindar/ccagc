@@ -51,5 +51,13 @@ def registration_page(request):
     context = {'form': form}
     return render(request, 'registration_page_1.html',context)
 
+def feedback_page(request):
+    form = FeedbackForm()
+    if request.method == 'POST':
+        form = FeedbackForm(request.POST)
+        print(form.is_valid())
+    context = {'form': form}
+    return render(request, 'feedback_page_1.html',context)
+
 
 
