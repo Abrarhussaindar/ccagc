@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 :root {
-    --bg: #258bf1;
+    --btn_bg: #062A62;
 }
 
 * {
@@ -9,4 +9,81 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     // background-color: red;
+}
+.main{
+    margin: .5em;
+    // border: 1px solid black;
+    .container{
+        margin: 1em 7em;
+        // border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        nav{
+            // border: 2px solid red;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .presi_logo{
+                margin: 1em;
+                // border: 2px solid black;
+                width: min-content;
+                // border-radius: 35px;
+                img{
+                    width: 40vw;
+                    height: 10vh;
+                    // border-radius: 50%;
+                }
+
+            }
+
+            .links{
+                margin: 1em;
+                // border: 2px solid black;
+                width: 35%;
+
+                margin-top: 2em;
+                height: 50px;
+
+                // display: flex;
+
+                // justify-content: space-between;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: space-evenly;
+                    li{
+                        // width: 1px;
+                        margin-top: .8em;
+                        // list-style: none;
+                        text-align: center;
+                        a{
+                            // width: 50px;
+                            color: black;
+                            background-color: #1F3443;
+                            // text-decoration: none;
+                            // margin: .5em;
+                            padding: 10px 20px;
+                            text-decoration: none;
+                            text-align: center;
+                            // background: #2196f3;
+                            border: 2px solid white;
+                            border-radius: 25px;
+                            color: white;
+                            // margin-top: 2em;
+                            
+                            
+                            
+                            // list-style: none;
+                        }
+                        .register{
+                            background-color: var(--btn_bg);
+                        }
+                    }
+                }
+                // font: 1em;
+                // color: red;
+            }
+        }
+
+    }
 }

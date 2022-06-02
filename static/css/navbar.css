@@ -1,11 +1,84 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 :root {
-  --bg: #258bf1;
+  --btn_bg: #062A62;
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
+}
+
+.main {
+  margin: .5em;
+}
+
+.main .container {
+  margin: 1em 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .container nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .container nav .presi_logo {
+  margin: 1em;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.main .container nav .presi_logo img {
+  width: 40vw;
+  height: 10vh;
+}
+
+.main .container nav .links {
+  margin: 1em;
+  width: 35%;
+  margin-top: 2em;
+  height: 50px;
+}
+
+.main .container nav .links ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .container nav .links ul li {
+  margin-top: .8em;
+  text-align: center;
+}
+
+.main .container nav .links ul li a {
+  color: black;
+  background-color: #1F3443;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+}
+
+.main .container nav .links ul li .register {
+  background-color: var(--btn_bg);
 }
 /*# sourceMappingURL=navbar.css.map */
