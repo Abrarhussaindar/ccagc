@@ -21,3 +21,4 @@ class MyUserAdmin(BaseUserAdmin):
 
 admin.site.register(Student, MyUserAdmin)
 admin.site.register(Stu_Register)
+admin.site.register(Events)

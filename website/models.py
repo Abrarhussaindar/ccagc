@@ -1,4 +1,5 @@
 from email.mime import application
+from statistics import mode
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
@@ -190,3 +191,16 @@ class FeedbackFormFields(models.Model):
     dislike = models.TextField(verbose_name='What did you dislike about this counselling session?', max_length=500, default=None)
     changes = models.TextField(verbose_name='What specific changes could improve the counselling session?', max_length=500, default=None)
     
+
+
+modes = (
+    ("Online", "Online"),
+    ("Offline", "offline") 
+)
+class Events(models.Model):
+    s_no = models.IntegerField(verbose_name="SI No.",max_length=5)
+    date = models.DateField(verbose_name="Date", max_length=50, null=True)
+    mode = models.CharField(verbose_name="Mode", max_length=10, null=True, choices=modes)
+    audience = models.CharField(verbose_name="Target Audience", max_length=100, null=True)
+    num_stus = models.IntegerField(verbose_name="No. Students Reg.", null=True)
+    speaker = models.CharField(verbose_name="Speaker", max_length=500, null=True)
