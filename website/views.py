@@ -15,20 +15,20 @@ def home_page(request):
 
 
 def events_page(request):
-    context1 = common_code()
+    context1 = common_code(request)
     return render(request, 'events_page.html',context1)
 
 def importance_page(request):
-    context1 = common_code()
+    context1 = common_code(request)
     return render(request, 'importance_page.html',context1)
 
 def intro_page(request):
-    context1 = common_code()
+    context1 = common_code(request)
     return render(request, 'introduction_page.html',context1)
 
 
 def members_page(request):
-    context1 = common_code()
+    context1 = common_code(request)
     return render(request, 'members_page.html',context1)
 
 

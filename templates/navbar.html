@@ -8,12 +8,16 @@
                 <img src="./images/presidency-logo.webp" alt="">
             </div>
             <div class="links">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Events</a></li>
-                    <li><a href="">Members</a></li>
-                    <li><a href="">Register</a></li>
-                </ul>   
+                <div class="ul1">
+                    <ul >
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'events' %}">Events</a></li>
+                        <li><a href="{% url 'members' %}">Members</a></li>
+                    </ul>
+                </div>
+                <div class="ul2">
+                    <ul><li><a href="{% url 'registration' %}">Register</a> </li></ul> 
+                </div>
             </div>
         </nav>
     </div>

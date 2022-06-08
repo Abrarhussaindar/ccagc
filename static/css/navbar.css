@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 :root {
-  --btn_bg: #062A62;
+  --bg: #258bf1;
 }
 
 * {
@@ -47,12 +47,29 @@
 
 .main .container nav .links {
   margin: 1em;
-  width: 35%;
+  width: 30%;
   margin-top: 2em;
   height: 50px;
+  margin-right: 7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.main .container nav .links ul {
+.main .container nav .links .ul1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.main .container nav .links .ul1 ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -62,12 +79,12 @@
           justify-content: space-evenly;
 }
 
-.main .container nav .links ul li {
+.main .container nav .links .ul1 ul li {
   margin-top: .8em;
   text-align: center;
 }
 
-.main .container nav .links ul li a {
+.main .container nav .links .ul1 ul li a {
   color: black;
   background-color: #1F3443;
   padding: 10px 20px;
@@ -78,7 +95,23 @@
   color: white;
 }
 
-.main .container nav .links ul li .register {
-  background-color: var(--btn_bg);
+.main .container nav .links .ul2 ul {
+  list-style: none;
+}
+
+.main .container nav .links .ul2 ul li {
+  margin-top: .8em;
+}
+
+.main .container nav .links .ul2 ul li a {
+  color: black;
+  background-color: #062A62;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
 }
 /*# sourceMappingURL=navbar.css.map */

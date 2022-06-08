@@ -1,23 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     {% load static %}
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {% block title %}
-        Members Page
-        {% endblock %}
-    </title>
-    <link rel="stylesheet" href="{% static 'css/members_page.css' %}">
-    
-</head>
-{% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %} Members Page {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/members_page.css' %}" />
+  </head>
+  {% load static %} {% include 'navbar.html' %}
 
-
-<body>
-    tesing
-</body>
+  <body>
+    <div class="table">
+      <table border="1" cellspacing="0">
+        <tr>
+          <th>SL NO</th>
+          <th>NAME</th>
+          <th>DESIGNATION</th>
+          <th>Dept/School</th>
+          <th>POSITION</th>
+        </tr>
+        <tr>
+         <th>1</th>
+          <th>Mr. Srivinay</th>
+          <th>Assistant Professor</th>
+          <th>CSE/SOE</th>
+          <th>Coordinator</th>
+        </tr>
+        <tr>
+          <th>2</th>
+          <th>Mr. Amogh P K</th>
+          <th>Assistant Professor</th>
+          <th>CSE/SOE</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>3</th>
+          <th>Dr. Swetha P C</th>
+          <th>Assistant Professor</th>
+          <th>CSE/SOE</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>4</th>
+          <th>Ms. Diana Steffi</th>
+          <th>Assistant Professor</th>
+          <th>ECE/SOE</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>5</th>
+          <th>Ms. Arpitha G R</th>
+          <th>Assistant Professor</th>
+          <th>MECH/SOE</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>6</th>
+          <th>Mr. Anmol Bhargava</th>
+          <th>Assistant Professor</th>
+          <th>PET/SOE</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>7</th>
+          <th>Ms. Sneha S Bagalkot</th>
+          <th>Assistant Professor</th>
+          <th>SOIs</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>8</th>
+          <th>Mr. Mrutyunjaya M S</th>
+          <th>Assistant Professor</th>
+          <th>SOIs</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>9</th>
+          <th>Mr. Sandeep K N</th>
+          <th>Assistant Professor</th>
+          <th>SOD</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>10</th>
+          <th>Mr. Sandeep K N</th>
+          <th>Assistant Professor</th>
+          <th>SOC</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>11</th>
+          <th>Dr. Jencypriyadharshany</th>
+          <th>Assistant Professor</th>
+          <th>SOC</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>12</th>
+          <th>Ms. Sakshi Pandey</th>
+          <th>Assistant Professor</th>
+          <th>SOL</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>13</th>
+          <th>Ms. Aparna Shukla</th>
+          <th>Assistant Professor</th>
+          <th>SOL</th>
+          <th>Member</th>
+        </tr>
+        <tr>
+          <th>14</th>
+          <th>Mr. Arabinda Bhandari</th>
+          <th>Assistant Professor</th>
+          <th>SOM</th>
+          <th>Member</th>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
