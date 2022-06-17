@@ -197,10 +197,14 @@ modes = (
     ("Online", "Online"),
     ("Offline", "offline") 
 )
-class Events(models.Model):
+class Event(models.Model):
     s_no = models.IntegerField(verbose_name="SI No.",max_length=5)
-    date = models.DateField(verbose_name="Date", max_length=50, null=True)
+    date = models.CharField(verbose_name="Date", max_length=50, null=True)
+    event_name = models.CharField(verbose_name="Event Name", max_length=500, null=True)
     mode = models.CharField(verbose_name="Mode", max_length=10, null=True, choices=modes)
     audience = models.CharField(verbose_name="Target Audience", max_length=100, null=True)
     num_stus = models.IntegerField(verbose_name="No. Students Reg.", null=True)
     speaker = models.CharField(verbose_name="Speaker", max_length=500, null=True)
+
+    def __str__(self):
+        return self.event_name

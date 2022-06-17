@@ -1,9 +1,7 @@
-# import re
-import imp
 from django.shortcuts import render
 from numpy import require
-# from matplotlib.style import context
 from .forms import *
+from .models import *
 
 def common_code(request):
     context = {}
@@ -15,7 +13,12 @@ def home_page(request):
 
 
 def events_page(request):
-    context1 = common_code(request)
+    
+    eves = Event.objects.all()
+    print(eves[0].date)
+    context1 = {
+        "eves": eves,
+    }
     return render(request, 'events_page.html',context1)
 
 def importance_page(request):
