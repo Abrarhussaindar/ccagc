@@ -1,4 +1,5 @@
 from email.mime import application
+from pyexpat import model
 from statistics import mode
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
@@ -198,13 +199,14 @@ modes = (
     ("Offline", "offline") 
 )
 class Event(models.Model):
-    s_no = models.IntegerField(verbose_name="SI No.",max_length=5)
+    eve_id = models.IntegerField(verbose_name="id", null=True)
+    s_no = models.IntegerField(verbose_name="SI No.", null=True)
     date = models.CharField(verbose_name="Date", max_length=50, null=True)
     event_name = models.CharField(verbose_name="Event Name", max_length=500, null=True)
     mode = models.CharField(verbose_name="Mode", max_length=10, null=True, choices=modes)
     audience = models.CharField(verbose_name="Target Audience", max_length=100, null=True)
     num_stus = models.IntegerField(verbose_name="No. Students Reg.", null=True)
     speaker = models.CharField(verbose_name="Speaker", max_length=500, null=True)
-
+    school = models.CharField(verbose_name="School", max_length=200, null=True)
     def __str__(self):
         return self.event_name

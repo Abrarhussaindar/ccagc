@@ -18,6 +18,232 @@
 {%  include 'navbar.html' %}
 
 <body>
-    {{eves}}
+
+    upcomming events
+    <div class="table">
+        <table border="1" cellspacing="0">
+            <tr>
+                <th>SL NO.</th>
+                <th>Event Name</th>
+                <th>Speaker</th>
+                <th>Target Audience</th>
+                <th>Date</th>
+            </tr>
+            {% for eve in eves %}
+            <tr>
+                <td>
+                    {{eve.s_no}}
+                </td>
+                <td>
+                    <a href="{% url 'particular_eve' eve.id %}">
+                    {{eve.event_name}}
+                </td>
+                <td>
+                    {{eve.speaker}}
+                </td>
+                <td>
+                    {{eve.audience}}
+                </td>
+                <td>
+                    {{eve.date}}
+                </td>
+            </tr>
+            {%endfor%}
+            
+        </table>
+    </div>
+        
+    events so far
+    <div class="table">
+        <table border="1" cellspacing="0">
+            <tr>
+                <th>SL NO.</th>
+                <th>Date</th>
+                <th>Event Name</th>
+                <th>Mode</th>
+                <th>Target Audience</th>
+                <th>Number Of Students Attending</th>
+                <th>Speaker</th>
+            </tr>
+            {% for eve in eves %}
+            <tr>
+                <td>
+                    {{eve.s_no}}
+                </td>
+                <td>
+                    {{eve.date}}
+                </td>
+                <td>
+                    <a href="{% url 'particular_eve' eve.id %}">
+                    {{eve.event_name}}
+                </td>
+                <td>
+                    {{eve.mode}}
+                </td>
+                <td>
+                    {{eve.audience}}
+                </td>
+                <td>
+                    {{eve.num_stus}}
+                </td>
+                <td>
+                    {{eve.speaker}}
+                </td>
+            </tr>
+            {%endfor%}
+        </tr>
+        </table>
+    </div>
+
+    school vise events
+    <div class="table">
+        <table border="1" cellspacing="0">
+            <tr>
+                <th>SL NO.</th>
+                <th>School</th>
+                <th>Number Of Events Conducted</th>
+                <th>Events Name</th>
+            </tr>
+            {% comment %} {% for eve in eves %} {% endcomment %}
+            <tr>
+                <td>
+                    1 {% comment %} {{eve.s_no}} {% endcomment %}
+                </td>
+                <td>
+                    SOE{% comment %} {{eve.date}} {% endcomment %}
+                </td>
+                
+                {% comment %} <tr> {% endcomment %}
+                    <td>
+                        {% for eves in SOE_eves %}
+                        <a href="{% url 'particular_eve' eves.id %}">
+                        {{eves.event_name}}
+                        {%endfor%}
+                    </td>
+                    <td>
+                        {{soe_num}}
+                    </td>
+                {% comment %} </tr> {% endcomment %}
+                
+                
+            </tr>
+            <tr>
+                <td>
+                    2 {% comment %} {{eve.s_no}} {% endcomment %}
+                </td>
+                <td>
+                    SOD{% comment %} {{eve.date}} {% endcomment %}
+                </td>
+                
+                {% comment %} <tr> {% endcomment %}
+                    <td>
+                        {% for eves in SOD_eves %}
+                        <a href="{% url 'particular_eve' eves.id %}">
+                        {{eves.event_name}}
+                        {%endfor%}
+                    </td>
+                    <td>
+                        {{sod_num}}
+                    </td>
+                {% comment %} </tr> {% endcomment %}
+                
+                
+            </tr>
+            <tr>
+                <td>
+                    3 {% comment %} {{eve.s_no}} {% endcomment %}
+                </td>
+                <td>
+                    SOL{% comment %} {{eve.date}} {% endcomment %}
+                </td>
+                
+                {% comment %} <tr> {% endcomment %}
+                    <td>
+                        {% for eves in SOL_eves %}
+                        <a href="{% url 'particular_eve' eves.id %}">
+                        {{eves.event_name}}
+                        {%endfor%}
+                    </td>
+                    <td>
+                        {{sol_num}}
+                    </td>
+                {% comment %} </tr> {% endcomment %}
+                
+                
+            </tr>
+            <tr>
+                <td>
+                    4 {% comment %} {{eve.s_no}} {% endcomment %}
+                </td>
+                <td>
+                    SOM{% comment %} {{eve.date}} {% endcomment %}
+                </td>
+                
+                {% comment %} <tr> {% endcomment %}
+                    <td>
+                        {% for eves in SOM_eves %}
+                        <a href="{% url 'particular_eve' eves.id %}">
+                        {{eves.event_name}}
+                        {%endfor%}
+                    </td>
+                    <td>
+                        {{som_num}}
+                    </td>
+                {% comment %} </tr> {% endcomment %}
+                
+                
+            </tr>
+            <tr>
+                <td>
+                    5 {% comment %} {{eve.s_no}} {% endcomment %}
+                </td>
+                <td>
+                    SOC{% comment %} {{eve.date}} {% endcomment %}
+                </td>
+                
+                {% comment %} <tr> {% endcomment %}
+                    <td>
+                        {% for eves in SOC_eves %}
+                        <a href="{% url 'particular_eve' eves.id %}">
+                        {{eves.event_name}}
+                        {%endfor%}
+                    </td>
+                    <td>
+                        {{soc_num}}
+                    </td>
+                {% comment %} </tr> {% endcomment %}
+                
+                
+            </tr>
+            <tr>
+                <td>
+                    6 {% comment %} {{eve.s_no}} {% endcomment %}
+                </td>
+                <td>
+                    SOI{% comment %} {{eve.date}} {% endcomment %}
+                </td>
+                
+                {% comment %} <tr> {% endcomment %}
+                    <td>
+                        {% for eves in SOI_eves %}
+                        <a href="{% url 'particular_eve' eves.id %}">
+                        {{eves.event_name}}
+                        {%endfor%}
+                    </td>
+                    <td>
+                        {{soi_num}}
+                    </td>
+                {% comment %} </tr> {% endcomment %}
+                
+                
+            </tr>
+            {% comment %} {%endfor%} {% endcomment %}
+        </table>
+    </div>
+
+
+    {% comment %} {% for eve in eves %}
+        {{eve.num_stus}}
+    {%endfor%} {% endcomment %}
 </body>
 </html>

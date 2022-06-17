@@ -13,13 +13,55 @@ def home_page(request):
 
 
 def events_page(request):
-    
+    # ALL EVENTS
     eves = Event.objects.all()
     print(eves[0].date)
+
+    # SCHOOL WISE EVENTS
+    SOE_eves = Event.objects.filter(school="SOE")
+    soe_num = SOE_eves.count()
+    print(soe_num)
+    SOD_eves = Event.objects.filter(school="SOD")
+    sod_num = SOD_eves.count()
+    SOL_eves = Event.objects.filter(school="SOL")
+    sol_num = SOL_eves.count()
+    SOM_eves = Event.objects.filter(school="SOM")
+    som_num = SOM_eves.count()
+    SOC_eves = Event.objects.filter(school="SOM")
+    soc_num = SOC_eves.count()
+    SOI_eves = Event.objects.filter(school="SOM")
+    soi_num = SOI_eves.count()
     context1 = {
         "eves": eves,
+        "SOE_eves":SOE_eves,    
+        "soe_num": soe_num,
+
+        "SOL_eves":SOL_eves,
+        "sol_num": sol_num,
+
+        "SOM_eves":SOM_eves,
+        "som_num": som_num,
+
+        "SOC_eves":SOC_eves,
+        "soc_num": soc_num,
+
+        "SOD_eves":SOD_eves,
+        "sod_num": sod_num,
+
+        "SOI_eves":SOI_eves,
+        "soi_num": soi_num,
+        
     }
     return render(request, 'events_page.html',context1)
+
+def particular_eves(request, eveid):
+    event = Event.objects.filter(id=eveid)
+
+    context1 = {
+        "event":event,
+        # common_code(request)
+    }
+    return render(request, 'particular_event.html',context1)
 
 def importance_page(request):
     context1 = common_code(request)
