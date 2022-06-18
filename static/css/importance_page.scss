@@ -9,4 +9,156 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     // background-color: red;
+    background-color: #F7F7F7;
+}
+
+.txt{
+    margin: .5em 12em 0 9em;
+    // border: 1px solid black;
+    .section1,.section2,.section3{
+        // border: 1px solid black;
+    }
+
+    .section1{
+        display: flex;
+        justify-content: space-between;
+
+        .tx{
+            .heading{
+                border: 1px solid black;
+                border-radius: 50px;
+                width: max-content;
+                padding: .5em 1em;
+                font-weight: bold;
+            }
+
+            .text{
+                margin-top: .3em;
+                border: 1px solid black;
+                border-radius: 30px;
+                width: 40vw;
+
+                ul{
+                    // padding: .5em;
+                    border-radius: 50px;
+                    li{
+                        list-style: none;
+                        border: 1px solid black;
+                        border-radius: 50px;
+                        margin: .5em;
+                        padding: 1em;
+                    }
+                }
+            }
+        }
+
+        .img{
+            margin-top: .5em;
+            // margin: 1em;
+            // margin-left: 1em;
+            img{
+                width: 38vw;
+                height: 55vh;
+                border-radius: 50px;
+            }
+        }
+    }
+    .section2{
+        display: flex;
+        justify-content: space-between;
+        .img{
+            img{
+                width: 43vw;
+                height: 55vh;
+                border-radius: 50px;
+                border: 1px solid black;
+                margin-top: 4em;
+            }
+        }
+        .xt{
+            // border: 1px solid black;
+            margin-top: 1em;
+            margin-right: 3em;
+            // margin-left: -5em;
+            .beni{
+                border: 1px solid black;
+                border-radius: 50px;
+                width: max-content;
+                padding: .5em 1em;
+                font-weight: bold;
+            }
+
+            .text{
+                // margin-left: 5em;
+                margin-top: .3em;
+                border: 1px solid black;
+                border-radius: 30px;
+                width: 30vw;
+
+                ul{
+                    // padding: .5em;
+                    border-radius: 50px;
+                    li{
+                        list-style: none;
+                        border: 1px solid black;
+                        border-radius: 50px;
+                        margin: .5em;
+                        padding: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .section3{
+        margin-bottom: 1em;
+        margin-top: 1em;
+        .guid{
+            border: 1px solid black;
+            border-radius: 50px;
+            width: max-content;
+            padding: .3em 1em;
+        }
+        .txte{
+            // border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+
+            .steps{
+                border: 1px solid black;
+                border-radius: 50px;
+                // display: flex;
+                width: max-content;
+                margin-top: .3em;
+                // justify-content: space-between;
+
+                table{
+                    margin: 1em;
+                }
+                .sp1{
+                    // margin: 1em;
+                    border: 1px solid black;
+                    // width: max-content;
+                    padding: .5em;
+                    border-radius: 50px;
+                }
+                .txt{
+                    // margin: 0;
+                    border: 1px solid black;
+                    width: max-content;
+                    padding: .5em;
+                    border-radius: 50px;                    
+                }
+            }
+
+            .img{
+                img{
+                    border: 1px solid black;
+                    margin: .5em;
+                    border-radius: 50px;
+                }
+            }
+        }
+
+    }
 }

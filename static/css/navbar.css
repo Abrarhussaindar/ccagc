@@ -9,12 +9,8 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.main {
-  margin: .5em;
-}
-
 .main .container {
-  margin: 2.5em 7em 0 7em;
+  margin: 0 7em 0 7em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
