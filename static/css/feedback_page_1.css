@@ -9,4 +9,130 @@
   font-family: 'Poppins', sans-serif;
   background-color: #F7F7F7;
 }
+
+.containe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: .5em 13em 0 9em;
+}
+
+.containe .txt {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.containe .txt .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.containe .txt .heading .title, .containe .txt .heading .steps {
+  border: 1px solid black;
+  border-radius: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: .3em 1em;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.containe .txt .content {
+  margin-bottom: 1em;
+  border: 1px solid black;
+  margin-top: .5em;
+  width: 40vw;
+  border-radius: 50px;
+}
+
+.containe .txt .content form {
+  border-radius: 50px;
+  margin: .3em;
+}
+
+.containe .txt .content form table {
+  border-radius: 50px;
+  padding: .5em;
+}
+
+.containe .txt .content form table tr td {
+  border-radius: 50px;
+}
+
+.containe .txt .content form table label {
+  margin: .5em;
+  font-size: 17px;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 15px;
+  text-align: center;
+  font-weight: 500;
+  width: 5px;
+}
+
+.containe .txt .content form table input {
+  margin: .5em;
+  width: 20vw;
+  border-radius: 50px;
+  height: 5vh;
+  border: 1px solid #FF0066;
+  padding: 1em;
+}
+
+.containe .txt .content form table textarea {
+  width: 15vw;
+  height: 20vh;
+  border-radius: 30px;
+}
+
+.containe .txt .content .btns {
+  border: 1px solid black;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 1em;
+  border-radius: 50px;
+}
+
+.containe .txt .content .btns button {
+  color: black;
+  background-color: #6666FF;
+  text-decoration: none;
+  padding: 5px 25px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+}
+
+.containe .txt .content .btns input {
+  background-color: #33CC99;
+  text-decoration: none;
+  padding: 5px 25px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+}
+
+.containe .img img {
+  border: 1px solid black;
+  border-radius: 50px;
+  width: 40vw;
+  margin-top: 3.5em;
+  height: 50vh;
+}
 /*# sourceMappingURL=feedback_page_1.css.map */

@@ -28,8 +28,20 @@ class CareerForm(forms.ModelForm):
         # 'first_name', 'middle_name', 'last_name', 'dob', 'gender', 'roll_number', 'phone_number','school', 'university_mail_id', 'course', 'semester', 'section', 'hobbies','why_ccagc', 'career_goals','hopes','barries', 'ambition', 'permanent_address', 'current_address'
         fields = ('__all__')
 
-class FeedbackForm(forms.ModelForm):
+class FeedbackFormone(forms.ModelForm):
     class Meta:
-        model = FeedbackFormFields
+        model = FeedbackFormFieldsPartOne
+        # 'counselor_name', 'type_of_counselling_session', 'beneficial', 'Information', 'address_my_concerns', 'valuable', 'genuine_interest', 'knowledgeable', 'examine_my_alternatives', 'like', 'dislike', 'changes'
+        fields = ('__all__')
+
+class FeedbackFormtwo(forms.ModelForm):
+    class Meta:
+        model = FeedbackFormFieldsParttwo
+        # 'counselor_name', 'type_of_counselling_session', 'beneficial', 'Information', 'address_my_concerns', 'valuable', 'genuine_interest', 'knowledgeable', 'examine_my_alternatives', 'like', 'dislike', 'changes'
+        fields = ('__all__')
+
+class FeedbackFormthree(forms.ModelForm):
+    class Meta:
+        model = FeedbackFormFieldsPartthree
         # 'counselor_name', 'type_of_counselling_session', 'beneficial', 'Information', 'address_my_concerns', 'valuable', 'genuine_interest', 'knowledgeable', 'examine_my_alternatives', 'like', 'dislike', 'changes'
         fields = ('__all__')

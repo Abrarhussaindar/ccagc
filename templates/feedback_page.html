@@ -1,0 +1,62 @@
+{% load static %}
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{% block title %} Feedback {% endblock %}</title>
+<link rel="stylesheet" href="{% static 'css/feedback_page_1.css' %}" />
+{% include 'navbar.html' %}
+{% load i18n %}
+{% block content %}
+<div class="containe">
+  <div class="txt">
+      <div class="heading">
+          <div class="title">
+              Feedback
+          </div>
+          <div class="steps">
+            <p>Step {{ wizard.steps.step1 }} of {{ wizard.steps.count }}</p>
+          </div>
+          
+      </div>
+      <div class="content">
+        
+          <form action="" method="post">
+            {% csrf_token %}
+              <table class="table">
+                {{ wizard.management_form }} 
+                {% if wizard.form.forms %} 
+                  {{wizard.form.management_form }} 
+                  {% for form in wizard.form.forms %} 
+                    {{ form }}
+                  {% endfor %} 
+                {% else %}
+                <tr>
+                  <td >
+                  {{ wizard.form }}
+                  </td>
+                </tr>
+                {% endif %}
+              </table>
+              <div class="btns">
+                {% if wizard.steps.prev %}
+                <button
+                  name="wizard_goto_step"
+                  type="submit"
+                  value="{{ wizard.steps.first }}"
+                >
+                  {% trans "first step" %}
+                </button>
+                <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}">
+                  {% trans "prev step" %}
+                </button>
+                {% endif %} <input type="submit" value="{% trans "submit" %}"/>
+              </div>
+              
+          </form>
+      </div>
+  </div>
+  <div class="img">
+      <img src="./images/5-professional-challenges-faced-by-career-counsellors_blog-.png" alt="">
+  </div>
+</div>
+{% endblock %}

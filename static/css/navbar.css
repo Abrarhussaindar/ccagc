@@ -46,7 +46,7 @@
   width: 30%;
   margin-top: 2em;
   height: 50px;
-  margin-right: 7em;
+  margin-right: 11em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,6 +102,26 @@
 .main .container nav .links .ul2 ul li a {
   color: black;
   background-color: #062A62;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+}
+
+.main .container nav .links .ul3 ul {
+  list-style: none;
+}
+
+.main .container nav .links .ul3 ul li {
+  margin-top: .8em;
+}
+
+.main .container nav .links .ul3 ul li a {
+  color: black;
+  background-color: #144592;
   text-decoration: none;
   padding: 10px 20px;
   text-decoration: none;

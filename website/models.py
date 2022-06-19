@@ -187,9 +187,15 @@ scale = (
     ('4','4'),
     ('5','5'),
 )
-class FeedbackFormFields(models.Model):
+class FeedbackFormFieldsPartOne(models.Model):
     counselor_name = models.CharField(verbose_name='Counselor Name', max_length=100, null=True)
     type_of_counselling_session = models.CharField(verbose_name='Type of counselling session', max_length=30, choices=sessio)
+
+    def __str__(self):
+        return self.counselor_name
+
+
+class FeedbackFormFieldsParttwo(models.Model):
     beneficial = models.BooleanField(verbose_name='The meeting was beneficial in achieving my immediate goal (s)',choices=scale) 
     Information = models.BooleanField(verbose_name='Information was thoroughly and clearly explained.',choices=scale) 
     address_my_concerns = models.BooleanField(verbose_name='There was enough time to address my concerns.',choices=scale) 
@@ -197,6 +203,8 @@ class FeedbackFormFields(models.Model):
     genuine_interest = models.BooleanField(verbose_name='Counselor showed genuine interest in assisting me.',choices=scale)
     knowledgeable = models.BooleanField(verbose_name='Counselor was knowledgeable and prepared for the session',choices=scale)
     examine_my_alternatives = models.BooleanField(verbose_name='Counselor helped me to consider options and examine my alternatives',choices=scale)
+    
+class FeedbackFormFieldsPartthree(models.Model):
     like = models.TextField(verbose_name='What did you like about this counselling session?', max_length=500, default=None)
     dislike = models.TextField(verbose_name='What did you dislike about this counselling session?', max_length=500, default=None)
     changes = models.TextField(verbose_name='What specific changes could improve the counselling session?', max_length=500, default=None)
