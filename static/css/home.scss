@@ -25,7 +25,7 @@
         height: 40vh;
         // justify-content: ;
         // display: block;
-        border-radius: 50px;
+        border-radius: 40px;
         margin-left: 5em;
         // justify-content: baseline;
 
@@ -53,7 +53,7 @@
             // margin: 5em 0 0 .8em;
             font-size: 22px;
             padding: .5em;
-            border-radius: 50px;
+            border-radius: 30px;
             .txt{
                 padding: .3em;
                 border-radius: 50px;
@@ -90,13 +90,13 @@
     }
     .img{
         // transition: margin-left 1s;
-        margin-top: -4em;
+        margin-top: -2.8em;
         // z-index: -999;
         // border: 1px solid black;
         img{
-// border: 1px solid black;
+            // border: 1px solid black;
             // opacity: .9;
-
+            // border-radius: 50px;
         }
     }
 }

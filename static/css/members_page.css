@@ -9,4 +9,62 @@
   font-family: 'Poppins', sans-serif;
   background-color: #F7F7F7;
 }
+
+.containe {
+  margin: .5em 10em 0 9em;
+}
+
+.heading {
+  border: 1px solid black;
+  border-radius: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .table {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border: 1px solid black;
+  margin-top: .5em;
+  border-radius: 20px;
+}
+
+.content .table table {
+  border-radius: 30px;
+}
+
+.content .table table tr th, .content .table table tr td {
+  border: 1px solid black;
+  text-align: center;
+  padding: .35em 1em;
+  font-size: 17px;
+  border-radius: 30px;
+}
+
+.content .img {
+  margin-top: 6em;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.content .img img {
+  border: 1px solid black;
+  width: 32vw;
+  border-radius: 50px;
+  height: 50vh;
+}
 /*# sourceMappingURL=members_page.css.map */
