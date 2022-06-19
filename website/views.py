@@ -1,5 +1,7 @@
-from django.shortcuts import render
-from numpy import require
+import imp
+from django.shortcuts import render, redirect
+# from numpy import require
+from formtools.wizard.views import *
 from .forms import *
 from .models import *
 
@@ -76,25 +78,51 @@ def members_page(request):
     context1 = common_code(request)
     return render(request, 'members_page.html',context1)
 
-
-
-    # form = CreateStudent()
-    # if request.method  == 'POST':
-    #     form = CreateStudent(request.POST)
-    #     print(form.is_valid())
-    #     # print(form.cleaned_data.get('email'))
-    #     if form.is_valid():
-    #         form.save()
-    #         print(form.cleaned_data.get('email'))
-    #         return redirect('login')
-    # context = {'form': form}
 def registration_page(request):
-    form = RegistrationForm()
-    if request.method == 'POST':
-        form = RegistrationForm(request.POST)
-        print(form.is_valid())
-    context = {'form': form}
-    return render(request, 'registration_page_1.html',context)
+    return render(request, 'registration_page_1.html',)
+
+class mulitstepform(SessionWizardView):
+    template_name = 'registration_page.html'
+    form_list = [PersonalForm, AcadamicForm, CareerForm]
+
+    def done(self, form_list, **kwargs):
+        form_data = [form.cleaned_data for form in form_list]
+        stu_personal = Stu_Personal(
+            first_name = form_data[0]['first_name'],
+            middle_name = form_data[0]['middle_name'],
+            last_name = form_data[0]['last_name'],
+            dob = form_data[0]['dob'],
+            gender = form_data[0]['gender'],
+            phone_number = form_data[0]['phone_number'],
+        )
+        
+        stu_personal.save()
+
+        stu_acadmic = Stu_Acadamic(
+            roll_number = form_data[1]['roll_number'],
+            section = form_data[1]['section'],
+            semester = form_data[1]['semester'],
+            course = form_data[1]['course'],
+            university_mail_id = form_data[1]['university_mail_id'],
+            school = form_data[1]['school'],
+        )
+        stu_acadmic.save()
+# 'hobbies','why_ccagc', 'career_goals','hopes','barries', 'ambition', 'permanent_address', 'current_address'
+        stu_career = Stu_career(
+            hobbies = form_data[2]['hobbies'],
+            why_ccagc = form_data[2]['why_ccagc'],
+            career_goals = form_data[2]['career_goals'],
+            hopes = form_data[2]['hopes'],
+            barries = form_data[2]['barries'],
+            ambition = form_data[2]['ambition'],
+        )
+        stu_career.save()
+        # print("student",stu_acadmic)
+        return render(self.request, 'thankyou.html', {'data': form_data})
+        
+
+def thankyou(request):
+    return render(request, 'thankyou.html')
 
 def feedback_page(request):
     form = FeedbackForm()
@@ -103,6 +131,3 @@ def feedback_page(request):
         print(form.is_valid())
     context = {'form': form}
     return render(request, 'feedback_page_1.html',context)
-
-
-

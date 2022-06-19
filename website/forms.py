@@ -10,13 +10,26 @@ class CreateStudent(UserCreationForm):
         fields = ('first_name', 'middle_name', 'last_name','roll_number', 'application_number', 'uid', 'section', 'dob', 'course', 'admitted_through', 'applied_year', 'address', 'city', 'state', 'country', 'email', 'password1', 'password2')
 
 
-class RegistrationForm(forms.ModelForm):
+class PersonalForm(forms.ModelForm):
     class Meta:
-        model = Stu_Register
-        fields = ('first_name', 'middle_name', 'last_name', 'dob', 'gender', 'roll_number', 'phone_number','school', 'university_mail_id', 'course', 'semester', 'section', 'hobbies','why_ccagc', 'career_goals','hopes','barries', 'ambition', 'permanent_address', 'current_address')
+        model = Stu_Personal
+        # 'first_name', 'middle_name', 'last_name', 'dob', 'gender', 'roll_number', 'phone_number','school', 'university_mail_id', 'course', 'semester', 'section', 'hobbies','why_ccagc', 'career_goals','hopes','barries', 'ambition', 'permanent_address', 'current_address'
+        fields = ('__all__')
 
+class AcadamicForm(forms.ModelForm):
+    class Meta:
+        model = Stu_Acadamic
+        # 'first_name', 'middle_name', 'last_name', 'dob', 'gender', 'roll_number', 'phone_number','school', 'university_mail_id', 'course', 'semester', 'section', 'hobbies','why_ccagc', 'career_goals','hopes','barries', 'ambition', 'permanent_address', 'current_address'
+        fields = ('__all__')
+
+class CareerForm(forms.ModelForm):
+    class Meta:
+        model = Stu_career
+        # 'first_name', 'middle_name', 'last_name', 'dob', 'gender', 'roll_number', 'phone_number','school', 'university_mail_id', 'course', 'semester', 'section', 'hobbies','why_ccagc', 'career_goals','hopes','barries', 'ambition', 'permanent_address', 'current_address'
+        fields = ('__all__')
 
 class FeedbackForm(forms.ModelForm):
     class Meta:
         model = FeedbackFormFields
-        fields = ('counselor_name', 'type_of_counselling_session', 'beneficial', 'Information', 'address_my_concerns', 'valuable', 'genuine_interest', 'knowledgeable', 'examine_my_alternatives', 'like', 'dislike', 'changes')
+        # 'counselor_name', 'type_of_counselling_session', 'beneficial', 'Information', 'address_my_concerns', 'valuable', 'genuine_interest', 'knowledgeable', 'examine_my_alternatives', 'like', 'dislike', 'changes'
+        fields = ('__all__')

@@ -29,7 +29,7 @@
 }
 
 .body .content .text {
-  margin-top: 6em;
+  margin-top: 3em;
   margin-left: 2em;
 }
 
@@ -47,6 +47,7 @@
 
 .body .content .qoute {
   border: 1px solid black;
+  margin: 3em 0 0 .1em;
   font-size: 22px;
   padding: .5em;
   border-radius: 30px;
@@ -58,7 +59,7 @@
 }
 
 .body .content .qoute .auther {
-  margin-left: 18em;
+  margin-left: 17em;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -70,7 +71,6 @@
 }
 
 .body .content .btn a button {
-  color: black;
   background-color: #144592;
   text-decoration: none;
   padding: 10px 25px;
@@ -84,5 +84,9 @@
 
 .body .img {
   margin-top: -2.8em;
+}
+
+.body .img img {
+  width: 50vw;
 }
 /*# sourceMappingURL=home.css.map */

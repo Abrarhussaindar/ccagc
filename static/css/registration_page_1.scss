@@ -10,3 +10,139 @@
     font-family: 'Poppins', sans-serif;
     background-color: #F7F7F7;
 }
+.containe{
+    // border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: .5em 13em 0 9em;
+    .txt{
+        width: max-content;
+        .heading{
+            display: flex;
+            justify-content: space-between;
+    
+            .title,.steps{
+                border: 1px solid black;
+                border-radius: 50px;
+                width: max-content;
+                padding: .3em 1em;
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+        .content{
+            margin-bottom: 1em;
+            border: 1px solid black;
+            margin-top: .5em;
+            width: 40vw;
+            // height: 70vh;
+            border-radius: 50px;
+            form{
+                // border: 2px solid red;
+                border-radius: 50px;
+                // margin: 1em;
+                // .table{
+                    // font-size: 5px;
+                    // border: 2px solid black;
+                    margin: .3em;
+                
+                    table{
+                        // align-co;
+                        // align-items: center;
+                        // font-size: 1px;
+                        // border: 1px solid black;
+                        border-radius: 50px;
+                        padding: .5em;
+                        tr{
+                            // border: 2px solid red;
+                            // border-radius: 50px;
+                            // margin: 1em;
+                            td{
+
+                                // border: 1px solid blue;
+                                border-radius: 50px;
+                                // margin: 1em;
+                            }
+                        }
+                        // table-layout: fixed;
+                        label{
+
+                            margin: .5em;
+                            font-size: 17px;
+                            border: 1px solid black;
+                            border-radius: 30px;
+                            padding: 5px 15px;
+                            // text-align: left;
+                            text-align: center;
+                            font-weight: 500;
+                            width: 5px;
+                        }
+                        input{
+                            margin: .5em;
+                            width: 20vw;
+                            border-radius: 50px;
+                            height: 5vh;
+                            border: 1px solid #FF0066;
+                            padding: 1em;
+
+                        }
+                        textarea{
+                            width: 15vw;
+                            height: 20vh;
+                            border-radius: 30px;
+                        }                       
+                }
+            }
+    
+                .btns{
+                    border: 1px solid black;
+                    width: max-content;
+                    margin: 1em;
+                    border-radius: 50px;
+                    button{
+                        color: black;
+                        background-color: #6666FF;
+                        text-decoration: none;
+                        // margin-top: -5em;
+                        padding: 5px 25px;
+                        font-size: 18px;
+                        text-decoration: none;
+                        text-align: center;
+                        // background: #2196f3;
+                        border: 2px solid white;
+                        border-radius: 25px;
+                        color: white;
+                    }
+                    input{
+                        // color: black;
+                        background-color: #33CC99;
+                        text-decoration: none;
+                        // margin-top: -5em;
+                        padding: 5px 25px;
+                        font-size: 18px;
+                        text-decoration: none;
+                        text-align: center;
+                        // background: #2196f3;
+                        border: 2px solid white;
+                        border-radius: 25px;
+                        color: white;
+                    }
+
+                    
+                }
+    
+    
+            }
+    }
+    .img{
+        
+        img{
+            border: 1px solid black;
+            border-radius: 50px;
+            width: 40vw;
+            margin-top: 3.5em;
+            height: 50vh;
+        }
+    }
+
+}

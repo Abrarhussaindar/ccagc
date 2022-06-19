@@ -14,6 +14,8 @@ cycler==0.10.0
 Django==3.2.7
 djangorestframework==3.12.4
 django-embed-video==1.4.0
+django-crispy-forms==1.14.0
+django-formtools==2.3
 fake-useragent==0.1.11
 flatbuffers==1.12
 gast==0.4.0

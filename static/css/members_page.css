@@ -50,12 +50,12 @@
   border: 1px solid black;
   text-align: center;
   padding: .35em 1em;
-  font-size: 17px;
+  font-size: 14px;
   border-radius: 30px;
 }
 
 .content .img {
-  margin-top: 6em;
+  margin-top: 5em;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;

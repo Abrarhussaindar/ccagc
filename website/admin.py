@@ -20,5 +20,7 @@ class MyUserAdmin(BaseUserAdmin):
     ordering = ('first_name', 'middle_name', 'last_name', 'email',)
 
 admin.site.register(Student, MyUserAdmin)
-admin.site.register(Stu_Register)
+admin.site.register(Stu_Acadamic)
+admin.site.register(Stu_career)
+admin.site.register(Stu_Personal)
 admin.site.register(Event)
