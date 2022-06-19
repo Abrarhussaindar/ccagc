@@ -22,7 +22,7 @@
         
           <form action="" method="post">
             {% csrf_token %}
-              <table class="table">
+              {% comment %} <table class="table"> {% endcomment %}
                 {{ wizard.management_form }} 
                 {% if wizard.form.forms %} 
                   {{wizard.form.management_form }} 
@@ -30,13 +30,20 @@
                     {{ form }}
                   {% endfor %} 
                 {% else %}
-                <tr>
-                  <td >
-                  {{ wizard.form }}
-                  </td>
-                </tr>
+                {% comment %} <tr> {% endcomment %}
+                  {% comment %} <td > {% endcomment %}
+                    {% comment %} <div class="wiz"> {% endcomment %}
+                      {% comment %} <ul> {% endcomment %}
+                        {% comment %} <li> {% endcomment %}
+                          {{ wizard.form }}
+                        {% comment %} </li> {% endcomment %}
+                      {% comment %} </ul> {% endcomment %}
+                    {% comment %} </div> {% endcomment %}
+                  
+                  {% comment %} </td> {% endcomment %}
+                {% comment %} </tr> {% endcomment %}
                 {% endif %}
-              </table>
+              {% comment %} </table> {% endcomment %}
               <div class="btns">
                 {% if wizard.steps.prev %}
                 <button
@@ -49,7 +56,8 @@
                 <button name="wizard_goto_step" type="submit" value="{{ wizard.steps.prev }}">
                   {% trans "prev step" %}
                 </button>
-                {% endif %} <input type="submit" value="{% trans "submit" %}"/>
+                {% endif %} 
+                <input type="submit" value="{% trans "submit" %}"/>
               </div>
               
           </form>

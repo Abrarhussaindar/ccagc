@@ -3,8 +3,9 @@ from pyexpat import model
 from statistics import mode
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
-
-import random
+# import formtools
+# import random
+from django import forms
 
 from django.db.models.expressions import Value
 from requests import session
@@ -146,7 +147,8 @@ class Stu_Personal(models.Model):
     first_name = models.CharField(verbose_name='First Name', max_length=200, null=True)
     middle_name = models.CharField(verbose_name='Middle Name', max_length=200, null=True)
     last_name = models.CharField(verbose_name='Last Name', max_length=200, null=True)
-    gender = models.CharField(verbose_name='Gender',max_length=20, null=True)
+    # Gender = forms.CharField(label='Gender', widget=forms.RadioSelect(choices=CHOICES))
+    # gender = models.CharField(verbose_name='Gender',max_length=20, null=True)
     dob = models.DateField(verbose_name='Date Of Birth', max_length=20, null=True)
     phone_number = models.CharField(verbose_name='Phone Number', max_length=10, null=True)
     
@@ -175,10 +177,7 @@ class Stu_career(models.Model):
     hopes = models.TextField(verbose_name='What are you hoping for from Career counselling and Guidance Cell?', max_length=5000, null=True)
     barries = models.TextField(verbose_name='What kinds of barriers do you think could get in the way of you pursuing the career you want, or meeting your career goals?', max_length=5000, null=True)
 
-sessio = (
-    ('Drop-In', 'Drop-In'),
-    ('Scheduled', 'Scheduled'),
-)
+
 
 scale = (
     ('1','1'),
@@ -189,21 +188,14 @@ scale = (
 )
 class FeedbackFormFieldsPartOne(models.Model):
     counselor_name = models.CharField(verbose_name='Counselor Name', max_length=100, null=True)
-    type_of_counselling_session = models.CharField(verbose_name='Type of counselling session', max_length=30, choices=sessio)
+    
 
     def __str__(self):
         return self.counselor_name
 
 
-class FeedbackFormFieldsParttwo(models.Model):
-    beneficial = models.BooleanField(verbose_name='The meeting was beneficial in achieving my immediate goal (s)',choices=scale) 
-    Information = models.BooleanField(verbose_name='Information was thoroughly and clearly explained.',choices=scale) 
-    address_my_concerns = models.BooleanField(verbose_name='There was enough time to address my concerns.',choices=scale) 
-    valuable = models.BooleanField(verbose_name='The session will be valuable to me in completing my academic, career and/or personal goals',choices=scale)
-    genuine_interest = models.BooleanField(verbose_name='Counselor showed genuine interest in assisting me.',choices=scale)
-    knowledgeable = models.BooleanField(verbose_name='Counselor was knowledgeable and prepared for the session',choices=scale)
-    examine_my_alternatives = models.BooleanField(verbose_name='Counselor helped me to consider options and examine my alternatives',choices=scale)
-    
+class FeedbackFormFieldsParttwo(models.Model): 
+    pass
 class FeedbackFormFieldsPartthree(models.Model):
     like = models.TextField(verbose_name='What did you like about this counselling session?', max_length=500, default=None)
     dislike = models.TextField(verbose_name='What did you dislike about this counselling session?', max_length=500, default=None)

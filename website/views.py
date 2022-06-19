@@ -135,23 +135,23 @@ class mulitstepfeedbackform(SessionWizardView):
         form_data = [form.cleaned_data for form in form_list]
         partone = FeedbackFormFieldsPartOne(
             counselor_name = form_data[0]['counselor_name'],
-            type_of_counselling_session = form_data[0]['type_of_counselling_session'],
+            # type_of_counselling_session = form_data[0]['type_of_counselling_session'],
         )
         
         partone.save()
 
         parttwo = FeedbackFormFieldsParttwo(
-            beneficial = form_data[1]['beneficial'],
-            Information = form_data[1]['Information'],
-            address_my_concerns = form_data[1]['address_my_concerns'],
-            valuable = form_data[1]['valuable'],
-            genuine_interest = form_data[1]['genuine_interest'],
-            knowledgeable = form_data[1]['knowledgeable'],
-            examine_my_alternatives = form_data[1]['examine_my_alternatives'],
+            # beneficial = form_data[1]['beneficial'],
+            # Information = form_data[1]['Information'],
+            # address_my_concerns = form_data[1]['address_my_concerns'],
+            # valuable = form_data[1]['valuable'],
+            # genuine_interest = form_data[1]['genuine_interest'],
+            # knowledgeable = form_data[1]['knowledgeable'],
+            # examine_my_alternatives = form_data[1]['examine_my_alternatives'],
         )
         parttwo.save()
 # 'hobbies','why_ccagc', 'career_goals','hopes','barries', 'ambition', 'permanent_address', 'current_address'
-        partthree = FeedbackFormFieldsParttwo(
+        partthree = FeedbackFormFieldsPartthree(
             like = form_data[2]['like'],
             dislike = form_data[2]['dislike'],
             changes = form_data[2]['changes'],
