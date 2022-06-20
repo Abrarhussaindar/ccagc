@@ -49,8 +49,12 @@
   font-size: 16.5px;
 }
 
+.intro .img {
+  margin-top: 1.5em;
+}
+
 .intro .img img {
-  margin: 1em;
+  margin: 2em;
   width: 40vw;
   height: 52vh;
   border: 1px solid black;
@@ -71,6 +75,7 @@
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
+  margin: 3.3em 2em 0 0;
 }
 
 .other .img img {

@@ -55,13 +55,13 @@
                     input{
                         // display: flex;
                         // justify-content: space-between;
-                        margin: 1.5em;
+                        margin: .5em;
                         // width: 1vw;
 
                         border-radius: 50px;
-                        // height: 5vh;
+                        height: 5vh;
                         border: 1px solid #FF0066;
-                        // padding: 1em;
+                        padding: 1em;
 
                     }
                     textarea{
@@ -119,10 +119,10 @@
     .img{
         
         img{
-            // border: 1px solid black;
+            border: 1px solid black;
             border-radius: 50px;
-            width: 30vw;
-            margin-top: 3.5em;
-            height: 40vh;
+            width: 35vw;
+            margin-top: 8em;
+            height: 45vh;
         }
     }

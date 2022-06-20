@@ -9,4 +9,106 @@
   font-family: 'Poppins', sans-serif;
   background-color: #F7F7F7;
 }
+
+.containe {
+  margin: .5em 13em 0 9em;
+}
+
+.containe .ue, .containe .esf {
+  margin: .5em 0 1em 0;
+}
+
+.containe .ue .heading, .containe .esf .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: .3em 1em;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.containe .ue .table, .containe .esf .table {
+  margin-top: .5em;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: .5em;
+}
+
+.containe .ue .table tr th, .containe .esf .table tr th {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: .5em;
+  font-size: 18px;
+  text-align: center;
+}
+
+.containe .ue .table tr td, .containe .esf .table tr td {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: .5em;
+  font-size: 16px;
+  text-align: center;
+}
+
+.containe .ue .table tr td a, .containe .esf .table tr td a {
+  color: black;
+  text-decoration: underline;
+}
+
+.containe .sve {
+  margin: .5em 10em 1em 0;
+}
+
+.containe .sve .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 50px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: .3em 1em;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.containe .sve .table {
+  margin-top: .5em;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: .5em;
+}
+
+.containe .sve .table tr th {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: .5em;
+  font-size: 18px;
+  text-align: center;
+}
+
+.containe .sve .table tr td {
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: .5em;
+  font-size: 16px;
+  text-align: center;
+}
+
+.containe .sve .table tr td a {
+  color: black;
+  text-decoration: underline;
+}
 /*# sourceMappingURL=events_page.css.map */

@@ -53,10 +53,12 @@
 }
 
 .txt .section1 .img {
-  margin-top: .5em;
+  margin-top: 5em;
+  margin-left: 1em;
 }
 
 .txt .section1 .img img {
+  border: 1px solid black;
   width: 38vw;
   height: 55vh;
   border-radius: 50px;
@@ -125,6 +127,7 @@
   width: -moz-max-content;
   width: max-content;
   padding: .3em 1em;
+  font-weight: bold;
 }
 
 .txt .section3 .txte {

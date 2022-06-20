@@ -10,3 +10,95 @@
     font-family: 'Poppins', sans-serif;
     background-color: #F7F7F7;
 }
+
+.containe{
+    // border: 1px solid black;
+    // display: flex;
+    // justify-content: space-between;
+    margin: .5em 13em 0 9em;
+    .ue,.esf{
+        margin: .5em 0 1em 0;
+        
+        // width: max-content;
+        .heading{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            border-radius: 50px;
+            width: max-content;
+            padding: .3em 1em;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .table{
+            margin-top: .5em;
+            border: 1px solid black;
+            border-radius: 30px;
+            padding: .5em;
+            tr{
+                th{
+                    border: 1px solid black;
+                    border-radius: 30px;
+                    padding: .5em;
+                    font-size: 18px;
+                    text-align: center;
+                }
+                td{
+                    a{
+                        color: black;
+                        text-decoration: underline;
+                    }
+                    border: 1px solid black;
+                    border-radius: 30px;
+                    padding: .5em;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .sve{
+        margin: .5em 10em 1em 0;
+        
+        // width: max-content;
+        .heading{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            border-radius: 50px;
+            width: max-content;
+            padding: .3em 1em;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .table{
+            margin-top: .5em;
+            border: 1px solid black;
+            border-radius: 30px;
+            padding: .5em;
+            tr{
+                th{
+                    border: 1px solid black;
+                    border-radius: 30px;
+                    padding: .5em;
+                    font-size: 18px;
+                    text-align: center;
+                }
+                td{
+                    a{
+                        color: black;
+                        text-decoration: underline;
+                    }
+                    border: 1px solid black;
+                    border-radius: 30px;
+                    padding: .5em;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}

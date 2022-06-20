@@ -15,9 +15,9 @@
 .txt{
     margin: .5em 12em 0 9em;
     // border: 1px solid black;
-    .section1,.section2,.section3{
+    // .section1,.section2,.section3{
         // border: 1px solid black;
-    }
+    // }
 
     .section1{
         display: flex;
@@ -53,10 +53,11 @@
         }
 
         .img{
-            margin-top: .5em;
+            margin-top: 5em;
             // margin: 1em;
-            // margin-left: 1em;
+            margin-left: 1em;
             img{
+                border: 1px solid black;
                 width: 38vw;
                 height: 55vh;
                 border-radius: 50px;
@@ -118,6 +119,7 @@
             border-radius: 50px;
             width: max-content;
             padding: .3em 1em;
+            font-weight: bold;
         }
         .txte{
             // border: 1px solid black;

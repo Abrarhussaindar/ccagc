@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    
 <head>
     {% load static %}
     <meta charset="UTF-8">
@@ -8,44 +8,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         {% block title %}
-particular_eve
+            particular_eve
         {% endblock %}
     </title>
+    {% load static %}
     <link rel="stylesheet" href="{% static 'css/particular_events.css' %}">
     
 </head>
-{% load static %}
+
 {%  include 'navbar.html' %}
 
 <body>
     {% comment %} {{event}} {% endcomment %}
+    {% comment %} {blockcontent} {% endcomment %}
+    <table>
+        {% for eve in event %}
+        <tr>
+            <td>
+                {{eve.s_no}}
+            </td>
+            <td>
+                {{eve.date}}
+            </td>
+            <td>
+                <a href="{% url 'particular_eve' eve.id %}">
+                {{eve.event_name}}
+            </td>
+            <td>
+                {{eve.mode}}
+            </td>
+            <td>
+                {{eve.audience}}
+            </td>
+            <td>
+                {{eve.num_stus}}
+            </td>
+            <td>
+                {{eve.speaker}}
+            </td>
+        </tr>
+        {%endfor%}
+    </table>
 
-    {% for eve in event %}
-    <tr>
-        <td>
-            {{eve.s_no}}
-        </td>
-        <td>
-            {{eve.date}}
-        </td>
-        <td>
-            <a href="{% url 'particular_eve' eve.id %}">
-            {{eve.event_name}}
-        </td>
-        <td>
-            {{eve.mode}}
-        </td>
-        <td>
-            {{eve.audience}}
-        </td>
-        <td>
-            {{eve.num_stus}}
-        </td>
-        <td>
-            {{eve.speaker}}
-        </td>
-    </tr>
-    {%endfor%}
-</tr>
 </body>
 </html>
