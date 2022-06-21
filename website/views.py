@@ -92,7 +92,7 @@ class mulitstepform(SessionWizardView):
             middle_name = form_data[0]['middle_name'],
             last_name = form_data[0]['last_name'],
             dob = form_data[0]['dob'],
-            gender = form_data[0]['gender'],
+            # gender = form_data[0]['gender'],
             phone_number = form_data[0]['phone_number'],
         )
         
