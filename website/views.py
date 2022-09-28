@@ -13,6 +13,8 @@ def home_page(request):
     context1 = common_code(request)
     return render(request, 'home.html',context1)
 
+def demo():
+    pass
 
 def events_page(request):
     # ALL EVENTS
