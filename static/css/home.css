@@ -6,19 +6,14 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #F7F7F7;
 }
 
 .body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-
 .body .content {
   border: 1px solid black;
   width: 36%;
@@ -27,37 +22,31 @@
   border-radius: 40px;
   margin-left: 5em;
 }
-
 .body .content .text {
   margin-top: 3em;
   margin-left: 2em;
 }
-
 .body .content .text .cc {
   font-size: 5em;
   letter-spacing: 45px;
   color: #9FD2DB;
 }
-
 .body .content .text .ccagc {
   font-size: 18px;
   margin-top: -1.5em;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
-
 .body .content .qoute {
   border: 1px solid black;
-  margin: 3em 0 0 .1em;
+  margin: 3em 0 0 0.1em;
   font-size: 22px;
-  padding: .5em;
+  padding: 0.5em;
   border-radius: 30px;
 }
-
 .body .content .qoute .txt {
-  padding: .3em;
+  padding: 0.3em;
   border-radius: 50px;
 }
-
 .body .content .qoute .auther {
   margin-left: 17em;
   width: -webkit-max-content;
@@ -65,11 +54,9 @@
   width: max-content;
   border-radius: 50px;
 }
-
 .body .content .btn {
   margin: 3em 2em;
 }
-
 .body .content .btn a button {
   background-color: #144592;
   text-decoration: none;
@@ -81,12 +68,9 @@
   border-radius: 25px;
   color: white;
 }
-
 .body .img {
   margin-top: -2.8em;
 }
-
 .body .img img {
   width: 50vw;
-}
-/*# sourceMappingURL=home.css.map */
+}/*# sourceMappingURL=home.css.map */

@@ -6,80 +6,52 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .main .container {
   margin: 0 7em 0 7em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .main .container nav {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .main .container nav .presi_logo {
   margin: 1em;
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
 }
-
 .main .container nav .presi_logo img {
   width: 40vw;
   height: 12vh;
 }
-
 .main .container nav .links {
   margin: 1em;
   width: 30%;
   margin-top: 2em;
   height: 50px;
   margin-right: 11em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .main .container nav .links .ul1 {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-
 .main .container nav .links .ul1 ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-
 .main .container nav .links .ul1 ul li {
-  margin-top: .8em;
+  margin-top: 0.8em;
   text-align: center;
 }
-
 .main .container nav .links .ul1 ul li a {
   color: black;
   background-color: #1F3443;
@@ -90,15 +62,12 @@
   border-radius: 25px;
   color: white;
 }
-
 .main .container nav .links .ul2 ul {
   list-style: none;
 }
-
 .main .container nav .links .ul2 ul li {
-  margin-top: .8em;
+  margin-top: 0.8em;
 }
-
 .main .container nav .links .ul2 ul li a {
   color: black;
   background-color: #062A62;
@@ -110,15 +79,12 @@
   border-radius: 25px;
   color: white;
 }
-
 .main .container nav .links .ul3 ul {
   list-style: none;
 }
-
 .main .container nav .links .ul3 ul li {
-  margin-top: .8em;
+  margin-top: 0.8em;
 }
-
 .main .container nav .links .ul3 ul li a {
   color: black;
   background-color: #144592;
@@ -129,5 +95,4 @@
   border: 2px solid white;
   border-radius: 25px;
   color: white;
-}
-/*# sourceMappingURL=navbar.css.map */
+}/*# sourceMappingURL=navbar.css.map */

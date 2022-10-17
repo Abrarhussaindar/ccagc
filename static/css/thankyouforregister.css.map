@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,mFAAI;AAEZ,AAAA,KAAK,CAAC;EACF,IAAI,CAAA,QAAC;CACR;;AACD,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,qBAAqB;CAErC",
-    "sources": [
-        "thankyouforregister.scss"
-    ],
-    "names": [],
-    "file": "thankyouforregister.css"
-}
+{"version":3,"sources":["thankyouforregister.scss","thankyouforregister.css"],"names":[],"mappings":"AAAQ,2FAAA;AAER;EACI,aAAA;ACAJ;;ADEA;EACI,SAAA;EACA,UAAA;EACA,kCAAA;ACCJ","file":"thankyouforregister.css"}

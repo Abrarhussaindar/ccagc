@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,mFAAI;AAEZ,AAAA,KAAK,CAAC;EACF,IAAI,CAAA,QAAC;CACR;;AAED,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,WAAW,EAAE,qBAAqB;EAClC,gBAAgB,EAAE,OAAO;CAC5B",
-    "sources": [
-        "registration_page_2.scss"
-    ],
-    "names": [],
-    "file": "registration_page_2.css"
-}
+{"version":3,"sources":["registration_page_2.scss","registration_page_2.css"],"names":[],"mappings":"AAAQ,2FAAA;AAER;EACI,aAAA;ACAJ;;ADGA;EACI,SAAA;EACA,UAAA;EACA,kCAAA;EACA,yBAAA;ACAJ","file":"registration_page_2.css"}
