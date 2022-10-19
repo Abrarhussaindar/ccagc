@@ -11,6 +11,9 @@
 }
 
 .containe {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
   margin: 0.5em 13em 0 9em;
 }
 .containe .ue, .containe .esf {
