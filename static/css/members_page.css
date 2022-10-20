@@ -13,18 +13,28 @@
 .containe {
   margin: 0.5em 10em 0 9em;
 }
-
-.heading {
-  border: 1px solid black;
-  border-radius: 50px;
+.containe .heading {
+  border: 2px solid rgb(8, 0, 128);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  height: 35px;
+  width: 220px;
   padding: 0.5em 1em;
   font-weight: bold;
+  font-size: 24px;
+  margin-left: 300px;
+  text-align: center;
+  background-color: #0e1e4d;
+  color: rgb(247, 239, 230);
 }
 
 .content {
+  margin-top: 3px;
   display: flex;
   justify-content: space-between;
 }
@@ -32,28 +42,37 @@
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  border: 1px solid black;
   margin-top: 0.5em;
   border-radius: 20px;
 }
 .content .table table {
   border-radius: 30px;
 }
-.content .table table tr th, .content .table table tr td {
+.content .table table tr th {
+  background-color: #0e1e4d;
+  color: aqua;
   border: 1px solid black;
   text-align: center;
   padding: 0.35em 1em;
-  font-size: 14px;
-  border-radius: 30px;
+  font-size: 17px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.content .table table tr td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 0.35em 1em;
+  font-size: 17px;
+  border-radius: 0px;
+  background-color: #cbd9ff;
 }
 .content .img {
-  margin-top: 5em;
+  margin-top: 6em;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
 }
 .content .img img {
-  border: 1px solid black;
   width: 32vw;
   border-radius: 50px;
   height: 50vh;
