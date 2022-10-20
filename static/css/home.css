@@ -63,13 +63,10 @@
   font-size: 18px;
   text-decoration: none;
   text-align: center;
-  background: #010f1a;
+  background: #2196f3;
   border: 2px solid white;
   border-radius: 25px;
   color: white;
-}
-.body .img {
-  margin-top: -2.8em;
 }
 .body .img img {
   width: 50vw;
