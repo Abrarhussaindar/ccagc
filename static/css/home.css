@@ -58,12 +58,12 @@
   margin: 3em 2em;
 }
 .body .content .btn a button {
-  background-color: #144592;
   text-decoration: none;
   padding: 10px 25px;
   font-size: 18px;
   text-decoration: none;
   text-align: center;
+  background: #010f1a;
   border: 2px solid white;
   border-radius: 25px;
   color: white;
