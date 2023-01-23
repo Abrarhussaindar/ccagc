@@ -25,41 +25,65 @@
 
         .tx{
             .heading{
-                border: 1px solid black;
-                border-radius: 50px;
+                border-top-right-radius: 30px;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                width: -webkit-max-content;
+                width: -moz-max-content;
                 width: max-content;
+                height: 30px;
+                margin-left: 2px;
                 padding: .5em 1em;
                 font-weight: bold;
+                font-size: 20px;
+                color: whitesmoke;
+                background-color: #ca6902;
             }
 
             .text{
-                margin-top: .3em;
-                border: 1px solid black;
-                border-radius: 30px;
-                width: 40vw;
-
                 ul{
-                    // padding: .5em;
-                    border-radius: 50px;
                     li{
                         list-style: none;
-                        border: 1px solid black;
-                        border-radius: 50px;
-                        margin: .5em;
+                        border-top-right-radius: 20px;
+                        margin: .2em;
+                        margin-right: 2em;
                         padding: 1em;
+                        background-color: #295f7a;
+                        color: white;
+                    }
+                }
+            }
+            .text{
+                ul{
+                    .f1{
+                        li{
+                            border-bottom-left-radius: 0px;
+                            border-bottom-right-radius: 0px;
+                            border-top-left-radius: 0px;
+                            border-top-right-radius: 0px;
+                        }
+                    }
+                }
+            }
+            .text{
+                ul{
+                    .f2{
+                        li{
+                            border-bottom-left-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                            border-top-left-radius: 0px;
+                            border-top-right-radius: 0px;
+                        }
                     }
                 }
             }
         }
 
         .img{
-            margin-top: 5em;
-            // margin: 1em;
-            margin-left: 1em;
+            margin-top: .5em;
             img{
-                border: 1px solid black;
                 width: 38vw;
-                height: 55vh;
+                height: 50vh;
                 border-radius: 50px;
             }
         }
@@ -72,39 +96,65 @@
                 width: 43vw;
                 height: 55vh;
                 border-radius: 50px;
-                border: 1px solid black;
                 margin-top: 4em;
             }
         }
         .xt{
-            // border: 1px solid black;
             margin-top: 1em;
             margin-right: 3em;
-            // margin-left: -5em;
             .beni{
-                border: 1px solid black;
-                border-radius: 50px;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+                border-bottom-left-radius: 30px;
+                width: -webkit-max-content;
+                width: -moz-max-content;
                 width: max-content;
+                height: 30px;
+                margin-left: 10px;
+                margin-bottom: 3px;
                 padding: .5em 1em;
                 font-weight: bold;
+                font-size: 20px;
+                color: whitesmoke;
+                background-color: #039734;
+                padding: .5em 1em;
             }
 
             .text{
-                // margin-left: 5em;
-                margin-top: .3em;
-                border: 1px solid black;
-                border-radius: 30px;
-                width: 30vw;
-
                 ul{
-                    // padding: .5em;
-                    border-radius: 50px;
                     li{
                         list-style: none;
-                        border: 1px solid black;
-                        border-radius: 50px;
-                        margin: .5em;
+                        border-top-left-radius: 20px;
+                        margin: .1em;
+                        margin-left: 2em;
+                        font-size: 18px;
                         padding: 1em;
+                        background-color: #8fd6bb;
+                        color: rgb(0, 0, 0);
+                    }
+                }
+            }
+            .text{
+                ul{
+                    .f1{
+                        li{
+                            border-bottom-left-radius: 0px;
+                            border-bottom-right-radius: 0px;
+                            border-top-left-radius: 0px;
+                            border-top-right-radius: 0px;
+                        }
+                    }
+                }
+            }
+            .text{
+                ul{
+                    .f2{
+                        li{
+                            border-bottom-left-radius: 20px;
+                            border-bottom-right-radius: 20px;
+                            border-top-left-radius: 0px;
+                            border-top-right-radius: 0px;
+                        }
                     }
                 }
             }
@@ -115,52 +165,67 @@
         margin-bottom: 1em;
         margin-top: 1em;
         .guid{
-            border: 1px solid black;
-            border-radius: 50px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            width: -webkit-max-content;
+            width: -moz-max-content;
             width: max-content;
-            padding: .3em 1em;
+            height: 30px;
+            margin-top: 60px;
+            margin-left: 2px;
+            padding: .5em 1em;
             font-weight: bold;
+            font-size: 20px;
+            color: whitesmoke;
+            background-color: #2e2f49;
+            padding: .5em 1em;
         }
         .txte{
-            // border: 1px solid black;
+            isplay: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
             justify-content: space-between;
-
             .steps{
-                border: 1px solid black;
-                border-radius: 50px;
-                // display: flex;
-                width: max-content;
-                margin-top: .3em;
-                // justify-content: space-between;
-
-                table{
-                    margin: 1em;
-                }
-                .sp1{
-                    // margin: 1em;
-                    border: 1px solid black;
-                    // width: max-content;
-                    padding: .5em;
-                    border-radius: 50px;
-                }
-                .txt{
-                    // margin: 0;
-                    border: 1px solid black;
+                .f4{
+                    width: -webkit-max-content;
+                    width: -moz-max-content;
                     width: max-content;
                     padding: .5em;
-                    border-radius: 50px;                    
+                    margin-right: 0px;
+                    font-size: 19px;
+                    height: 30px;
+                    width: 80px;
+                    text-align: center;
+                    border-top-left-radius: 30px;
+                    border-bottom-left-radius: 30px;
+                    background-color: #0f3b66;
+                    color: white;
                 }
             }
-
+            .steps{
+                .f3{
+                    width: -webkit-max-content;
+                    width: -moz-max-content;
+                    width: max-content;
+                    height: 30px;
+                    margin: .1em;
+                    padding: .5em;
+                    font-size: 19px;
+                    border-top-right-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    background-color: #b8c6d4;
+                }
+            }
             .img{
                 img{
-                    border: 1px solid black;
-                    margin: .5em;
+                    margin-left: 1em;
                     border-radius: 50px;
                 }
             }
         }
-
     }
 }
